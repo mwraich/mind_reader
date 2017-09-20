@@ -6,7 +6,7 @@ describe Mind do
 
     result = mind.respond_to_guess(1)
 
-    expect(result).to eq(true)
+    expect(result).to eq("CORRECT")
   end
 
   it "returns lower when offered a guess higher than it's choice" do
@@ -24,5 +24,4 @@ describe Mind do
 
     expect(result).to eq("HIGHER")
   end
-
 end
