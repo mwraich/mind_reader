@@ -5,7 +5,15 @@ class MindReader
     @range_max = range_max
   end
 
+  def range
+    1..range_max
+  end
+
   def guess(number)
-    number
+    if range.include?(number)
+      number
+    else
+      raise 'Not Within Range'
+    end
   end
 end
