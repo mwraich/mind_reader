@@ -10,10 +10,7 @@ class MindReader
   end
 
   def guess(number)
-    if range.include?(number)
-      number
-    else
-      raise 'Not Within Range'
-    end
+    raise 'Not Within Range' unless range.include?(number)
+    number
   end
 end
